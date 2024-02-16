@@ -1,4 +1,7 @@
 # 미로
+
+import time
+import math
 def maze(size, matrix):
     di = [1,-1,0,0]
     dj = [0,0,1,-1]
@@ -39,6 +42,6 @@ for tc in range(1, T+1):
     size = int(input())
     # print(size)
     matrix = [list(map(int, input())) for _ in range(size)]
-    print(matrix)
+    # print(matrix)
     result = maze(size, matrix)
-    print(result)
+    print(f'#{tc} {result}')
