@@ -49,8 +49,7 @@ def lca(a,b): #여기서는 공통 조상 return
     #깊이가 같아지거나 높아질때까지.
     if a == b :
         return a
-    if\
-            depth[a] == 1:
+    if depth[a] == 1:
         return parents_arr[0][a]
     #깊이가 1이면 바로 위. 밑의 else 부분에서 오류가 난다. 왜냐하면 깊이가 1이기 때문에 ancestor가 0이 될 때까지 If 문을 순회하기 때문이다. 
     for ancestor in range(max-1,-1,-1):
