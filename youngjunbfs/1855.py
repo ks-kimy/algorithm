@@ -1,5 +1,6 @@
 import sys
 from collections import deque
+sys.setrecursionlimit(200000)
 sys.stdin = open("input.txt", "r")
 
 
